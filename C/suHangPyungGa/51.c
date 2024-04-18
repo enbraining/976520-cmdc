@@ -4,14 +4,17 @@
 #include <stdlib.h>
 #include <time.h>
 
-//1차원 배열의 값 더하기
+//배열의 max값
 
-int main49() {
-	int array[5] = { 123, 59, 390, 129, 69 }, sum=0;
+int main51() {
+	int array[5] = { 6, 2, 7, 9, 3 }, max=0;
+
 	for (int i = 0; i < 5; i++) {
-		sum = sum + array[i];
+		if (max < array[i]) {
+			max = array[i];
+		}
 	}
-	printf("%d", sum);
+	printf("%d", max);
 }
 
 
