@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//1237 Á¤¤»¹÷¤»
+//1237 ì •ã…‹ë²…ã…‹
 main1237() {
-    printf("¹®Á¦ÀÇ Á¤´ä");
+    printf("ë¬¸ì œì˜ ì •ë‹µ");
 }
