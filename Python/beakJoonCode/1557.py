@@ -11,8 +11,8 @@ def check(x):
             if nn > x:  # nn이 목표값 x를 초과하면 루프를 종료
                 break
 
-            count += x // nn * sign #x 안에 n1의 배수의 개수를 더하여 count를 업데이트하고 sign과 곱함
-            namauji |= int(not x % nn) #x가 n1로 나누어 떨어지지 않으면 namauji를 업데이트
+            count += x // nn * sign #x 안에 nn의 배수의 개수를 더하여 count를 업데이트하고 sign과 곱함
+            namauji |= int(not x % nn) #x가 nn로 나누어 떨어지지 않으면 namauji를 업데이트
             
             queue.append((nn, j, -sign)) # queue에 (nn, j, -sign)를 추가해가꼬 계속
     return x - count, namauji
