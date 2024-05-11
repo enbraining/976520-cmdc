@@ -1,3 +1,4 @@
+#1557 제곱 ㄴㄴ https://www.acmicpc.net/problem/1557
 def check(x):
     count = 0  #제곱ㄴㄴ수 개수
     namauji = 0  #x를 제곱수로 나누었을 때 나머지가 있는지
