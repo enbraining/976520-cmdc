@@ -174,7 +174,9 @@ public class Problem17104 {
         }
 
         for (int i = 0; i < primes.length; i++) {  // 소수 생성기 배열 초기화
-            if (primes[i] == 0) continue;
+            if (primes[i] == 0) { 
+                continue; 
+            }
             primeGenerator[(i - 1) >> 1] = 1;  // 소수 생성기 배열의 인덱스 i에 해당하는 값을 1로 설정
         }
         primeGenerator[0] = 0;  // 0은 소수가 아니므로 0으로 설정
