@@ -7,20 +7,20 @@
 using namespace std;
 
 int numberOfNodes, numberOfEdges, numberOfFestivals, numberOfQueries;
-vector<pair<int, int>> adjacencyList[999999];
+vector<pair<int, int>> adjacencyList[200000];
 vector<int> festivalLocations;
-vector<int> shortestDistanceFromFestival(999999, 987654321); 
+vector<int> shortestDistanceFromFestival(200000, 987654321); 
 
 vector<tuple<int, int, int>> edges;
-set<int> nodeParticipantInfo[999999];
+set<int> nodeParticipantInfo[200000];
 
-int disjointSetParent[999999];
-int disjointSetRank[999999];
+int disjointSetParent[200000];
+int disjointSetRank[200000];
 
-int travelResult[999999];
+int travelResult[200000];
 
 void initializeDisjointSet() {
-    for (int i = 0; i < 999999; i++) {
+    for (int i = 0; i < 200000; i++) {
         disjointSetParent[i] = i;
         disjointSetRank[i] = 1;
     }
